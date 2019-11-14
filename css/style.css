@@ -1,0 +1,96 @@
+/* ========= 
+   CSS RESET 
+ =========== */
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial;
+}
+
+/* Start game window */
+.start-game-window{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Balloons */
+
+.balloon-red {
+    background: url('../images/balloon-red.png');
+}
+
+.balloon-violet {
+    background: url('../images/balloon-violet.png');
+}
+
+.balloon-blue {
+    background: url('../images/balloon-blue.png');
+}
+
+.balloon-yellow {
+    background: url('../images/balloon-yellow.png');
+}
+
+.balloon-green {
+    background: url('../images/balloon-green.png');
+}
+
+.balloon {
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    top: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Score block */
+
+.score-block {
+    width: 300px;
+    height: 80px;
+    background: #efefef;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 150px);
+}
+
+/* Modal windows for win and lose */
+
+.total-shadow {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* z-index doesn't work with position static */
+    position: relative;
+    z-index: 100;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-block {
+    padding: 10px 80px 40px;
+    background: #fff;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+
+.win, .lose {
+    display: none;
+}
